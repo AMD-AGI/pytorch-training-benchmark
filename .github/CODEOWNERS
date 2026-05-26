@@ -1,0 +1,31 @@
+# CODEOWNERS for AMD-AGI/pytorch-training-benchmark
+#
+# Each line is a file pattern followed by one or more owners.
+# Owners listed here will be requested for review automatically when
+# someone opens a pull request that modifies the matching files.
+#
+# Order matters: the LAST matching pattern takes the most precedence.
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-security/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo (fallback rule).
+*                                       @ebarsoumAMD 
+
+# Pre-training (Torchrun + FSDP) sources
+/train_fsdp.py                           @ebarsoumAMD
+/llama.py                                @ebarsoumAMD
+/mistral.py                              @ebarsoumAMD
+/dataset.py                              @ebarsoumAMD
+/configs/                                @ebarsoumAMD
+
+# Torchtune fine-tuning recipes and launch scripts
+/llama_3_1_70b_full_finetune_recipe.yaml  @ebarsoumAMD
+/llama_3_1_70b_lora_finetune_recipe.yaml  @ebarsoumAMD
+/wikitext_finetune.sh                    @ebarsoumAMD
+/wikitext_lora_finetune.sh               @ebarsoumAMD
+
+# Repo governance / standards files
+/README.md                              @ebarsoumAMD 
+/LICENSE                                @ebarsoumAMD
+/SECURITY.md                            @ebarsoumAMD
+/CONTRIBUTING.md                        @ebarsoumAMD 
+/.github/                               @ebarsoumAMD 

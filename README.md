@@ -1,3 +1,6 @@
+This repository is no longer maintained
+
+
 # Training
 This code is used for benchmarking Pytorch based pre-training on a synthesized dataset for a single node using [Torchrun](https://pytorch.org/docs/stable/elastic/run.html) utility.
 
